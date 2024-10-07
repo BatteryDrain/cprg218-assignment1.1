@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+#container{
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+main{
+
+}
+header{
+background-color: #120323;
+color: white;
+}
