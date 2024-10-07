@@ -11,7 +11,10 @@ main{
 }
 header{
     background-color: #120323;
-    color: white;
+    color: #97bf04;
+    img{
+
+    }
 }
 aside{
     background-color: #97bf04;
@@ -19,14 +22,18 @@ aside{
 footer{
     background-color: #d9043d;
 }
-img{
+body{
+    
+}
+img#puffin{
     max-width: 100%;
     border-style: solid;
     border-color: #d9043d;
     border-width: 4px;
+    float: left;
 }
 @media screen and (min-width: 400){
     img{
-        width: 300px;
+        width: 100%;
     }
 }
