@@ -4,11 +4,28 @@
 #container{
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+    display: flex;
 }
 main{
 
 }
 header{
-background-color: #120323;
-color: white;
+    background-color: #120323;
+    color: white;
+}
+aside{
+    background-color: #97bf04;
+}
+footer{
+    background-color: #d9043d;
+}
+img{
+    max-width: 100%;
+    border-style: #d9043d;
+    border-radius: 4px;
+}
+@media screen and (min-width: 400){
+    img{
+        width: 300px;
+    }
 }
