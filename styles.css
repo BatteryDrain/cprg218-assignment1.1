@@ -13,7 +13,6 @@ header{
     height: 155px;
     background-color: #120323;
     color: #97bf04;
-    position: center;
     img#logo{
         float: left;
     }
@@ -34,7 +33,7 @@ body{
         height: 220px;
         background-color: #120323;
         color: #97bf04;
-        position: center;
+        text-align: center;
         img#logo{
             float: none;
             align-items: center;
