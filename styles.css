@@ -23,7 +23,7 @@ body{
     }
     footer{
         height: 60px;
-        margin: auto;
+        text-align: center;
         background-color: #d9043d;
         color: white;
     }
