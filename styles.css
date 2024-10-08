@@ -3,37 +3,101 @@
 }
 #container{
     grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     display: flex;
 }
 main{
 
 }
 header{
+    height: 155px;
     background-color: #120323;
     color: #97bf04;
-    img{
-
+    position: center;
+    img#logo{
+        float: left;
     }
 }
-aside{
-    background-color: #97bf04;
-}
-footer{
-    background-color: #d9043d;
-}
 body{
-    
+    aside{
+        background-color: #97bf04;
+    }
+    footer{
+        height: 60px;
+        margin: auto;
+        background-color: #d9043d;
+        color: white;
+    }
 }
-img#puffin{
-    max-width: 100%;
-    border-style: solid;
-    border-color: #d9043d;
-    border-width: 4px;
-    float: left;
+@media screen and (max-width: 767px){
+    header{
+        height: 220px;
+        background-color: #120323;
+        color: #97bf04;
+        position: center;
+        img#logo{
+            float: none;
+            align-items: center;
+        }
+    }
+    #container{
+        /*background-color: red;*/
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+
+    }
+    img#puffin{
+        max-width: 100%;
+        border-style: solid;
+        border-color: #d9043d;
+        border-width: 4px;
+        float: left;
+    }
 }
-@media screen and (min-width: 400){
-    img{
-        width: 100%;
+@media screen and (min-width: 768px) and (max-width: 999px){
+    header{
+        height: 155px;
+        background-color: #120323;
+        color: #97bf04;
+        position: center;
+        img#logo{
+            float: left;
+        }
+    }
+    #container{
+        /*background-color: green;*/
+        display: flex;
+        flex-direction: column;
+    }
+    img#puffin{
+        max-width: 300px;
+        border-style: solid;
+        border-color: #d9043d;
+        border-width: 4px;
+        float: left;
+    }
+}
+@media screen and (min-width: 1000px){
+    header{
+        height: 155px;
+        background-color: #120323;
+        color: #97bf04;
+        position: center;
+        img#logo{
+            float: left;
+        }
+    }
+    #container{
+        /*background-color: blue;*/
+        display: flex;
+    }
+    img#puffin{
+        max-width: 300px;
+        border-style: solid;
+        border-color: #d9043d;
+        border-width: 4px;
+        float: left;
     }
 }
