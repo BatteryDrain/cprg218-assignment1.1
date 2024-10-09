@@ -13,18 +13,14 @@ img#puffin{
     margin-right: 15px;
 }
 .header-container{
-    justify-content: center;
     display: flex;
-    flex-direction: column;
-    /*height: 155px;*/
+    justify-content: center;
+    -ms-flex-align: center;
     background-color: #120323;
     color: #97bf04;
-    /*img#logo{
-        float: left;
-    }*/
-    img#logo{
-        max-width: 200px;
-    }
+}
+img#logo{
+    max-width: 200px;
 }
 body{
     aside{
@@ -44,12 +40,11 @@ body{
     .header-container{
         justify-content: center;
         flex-direction: column;
-        /*height: 220px;
         text-align: center;
-        img#logo{
-            float: none;
-            align-items: center;
-        }*/
+    }
+    .header-container img{
+        display: block;
+        margin: 0 auto;
     }
     #container{
         /*background-color: red;*/
@@ -59,7 +54,7 @@ body{
     body{
 
     }
-    img#puffin{
+    figure img{
         max-width: 100%;
         align-items: center;
         border-style: solid;
@@ -71,17 +66,14 @@ body{
 @media screen and (min-width: 768px) and (max-width: 999px){
     .header-container{
         flex-direction: row;
-        /*height: 155px;
-        img#logo{
-            float: left;
-        }*/
+        align-items: center;
     }
     #container{
         /*background-color: green;*/
         display: flex;
         flex-direction: column;
     }
-    img#puffin{
+    figure img{
         max-width: 300px;
         border-style: solid;
         border-color: #d9043d;
@@ -89,20 +81,17 @@ body{
         float: left;
     }
 }
+/*desktop*/
 @media screen and (min-width: 1000px){
     .header-container{
         flex-direction: row;
-        /*height: 155px;
-        img#logo{
-            display: flex;
-            float: left;
-        }*/
+        align-items: center;
     }
     #container{
         /*background-color: blue;*/
         display: flex;
     }
-    img#puffin{
+    figure img{
         max-width: 300px;
         border-style: solid;
         border-color: #d9043d;
