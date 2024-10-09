@@ -9,17 +9,29 @@
 main{
 
 }
-header{
-    height: 155px;
+img#puffin{
+    margin-right: 15px;
+}
+.header-container{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /*height: 155px;*/
     background-color: #120323;
     color: #97bf04;
-    img#logo{
+    /*img#logo{
         float: left;
+    }*/
+    img#logo{
+        max-width: 200px;
     }
 }
 body{
     aside{
+        padding-left: 10px;
         background-color: #97bf04;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
     footer{
         height: 60px;
@@ -29,15 +41,15 @@ body{
     }
 }
 @media screen and (max-width: 767px){
-    header{
-        height: 220px;
-        background-color: #120323;
-        color: #97bf04;
+    .header-container{
+        justify-content: center;
+        flex-direction: column;
+        /*height: 220px;
         text-align: center;
         img#logo{
             float: none;
             align-items: center;
-        }
+        }*/
     }
     #container{
         /*background-color: red;*/
@@ -49,6 +61,7 @@ body{
     }
     img#puffin{
         max-width: 100%;
+        align-items: center;
         border-style: solid;
         border-color: #d9043d;
         border-width: 4px;
@@ -56,14 +69,12 @@ body{
     }
 }
 @media screen and (min-width: 768px) and (max-width: 999px){
-    header{
-        height: 155px;
-        background-color: #120323;
-        color: #97bf04;
-        position: center;
+    .header-container{
+        flex-direction: row;
+        /*height: 155px;
         img#logo{
             float: left;
-        }
+        }*/
     }
     #container{
         /*background-color: green;*/
@@ -79,14 +90,13 @@ body{
     }
 }
 @media screen and (min-width: 1000px){
-    header{
-        height: 155px;
-        background-color: #120323;
-        color: #97bf04;
-        position: center;
+    .header-container{
+        flex-direction: row;
+        /*height: 155px;
         img#logo{
+            display: flex;
             float: left;
-        }
+        }*/
     }
     #container{
         /*background-color: blue;*/
@@ -98,5 +108,8 @@ body{
         border-color: #d9043d;
         border-width: 4px;
         float: left;
+    }
+    aside{
+        max-width: 25%;
     }
 }
