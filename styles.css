@@ -23,18 +23,21 @@ img#logo{
     max-width: 200px;
 }
 body{
-    aside{
-        padding-left: 10px;
-        background-color: #97bf04;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    footer{
-        height: 60px;
-        text-align: center;
-        background-color: #d9043d;
-        color: white;
-    }
+
+}
+aside{
+    padding-left: 10px;
+    background-color: #97bf04;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+footer{
+    height: 60px;
+    text-align: center;
+    background-color: #d9043d;
+    color: white;
+    width: 100%;
+    margin: 0%;
 }
 @media screen and (max-width: 767px){
     .header-container{
